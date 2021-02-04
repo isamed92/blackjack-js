@@ -2,6 +2,9 @@ html, body {
     margin: 0;
     background-color: #2f4f30 !important;
 }
+h1{
+    color: #fff;
+}
 
 .titulo{
     text-align: center;
