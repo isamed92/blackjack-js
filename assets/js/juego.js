@@ -80,14 +80,14 @@ const computerTurn = (playerScore) => {
     if (playerScore > 21) break;
   } while (computerScore < playerScore && playerScore <= 21);
   setTimeout(() => {
-    if(computerScore===playerScore){
+    if (computerScore === playerScore) {
       //! Lose player
       alert('empate');
-    } else if(playerScore>21){
+    } else if (playerScore > 21) {
       alert('computer wins');
-    } else if(computerScore>21){
-      alert('player wins')
-    } else{
+    } else if (computerScore > 21) {
+      alert('player wins');
+    } else {
       alert('computer wins');
     }
   }, 10);
@@ -131,4 +131,19 @@ btnStop.addEventListener('click', () => {
   btnDraw.disabled = true;
   btnStop.disabled = true;
   computerTurn(playerScore);
+});
+
+btnNew.addEventListener('click', () => {
+  console.clear();
+  deck = []; 
+  crearDeck();
+  playerScore = 0;
+  computerScore = 0;
+  smallsPoints[0].innerText=0;
+  smallsPoints[1].innerText=0;
+  divPlayerHand.innerHTML='';
+  divComputerHand.innerHTML='';
+  
+  btnDraw.disabled=false;
+  btnStop.disabled=false;
 });
