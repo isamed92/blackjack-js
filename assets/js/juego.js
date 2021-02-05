@@ -1,4 +1,9 @@
-/**
+(() => {
+  'use strict'
+  // const personajes = ['ana', 'Merci', 'May'];
+  // console.log(personajes);
+
+  /**
  * 2C = Two of Clubs
  * 2D = Two of Diamonds
  * 2H = Two of Hearts
@@ -33,7 +38,7 @@ const crearDeck = () => {
     }
   }
   deck = _.shuffle(deck);
-  console.log(deck);
+  // console.log(deck);
   return deck;
 };
 
@@ -147,3 +152,8 @@ btnNew.addEventListener('click', () => {
   btnDraw.disabled=false;
   btnStop.disabled=false;
 });
+
+})();
+
+
+
