@@ -20,7 +20,7 @@
     <div class="row container">
         <div class="col">
             <h1>Player 1 - <small>0</small></h1>
-            <div id="jugador-cartas">
+            <div id="jugador-cartas" class="divCartas">
                 <!-- <img class="carta" src="assets/cartas/10C.png" alt="carta"> -->
                 <!-- <img class="carta" src="assets/cartas/10C.png" alt="carta"> -->
                 <!-- <img class="carta" src="assets/cartas/10C.png" alt="carta"> -->
@@ -31,7 +31,7 @@
     <div class="row container mt-2">
         <div class="col">
             <h1>PC - <small>0</small></h1>
-            <div id="computadora-cartas">
+            <div id="computadora-cartas" class="divCartas">
                 <!-- <img class="carta" src="assets/cartas/3H.png" alt="carta"> -->
                 <!-- <img class="carta" src="assets/cartas/3H.png" alt="carta"> -->
                 <!-- <img class="carta" src="assets/cartas/3H.png" alt="carta"> -->
@@ -42,6 +42,12 @@
 
     <script src="assets/js/underscore.js"></script>
     <script src="assets/js/juego.js"></script>
+
+    <script>
+        document.querySelector('#btn-new').addEventListener('click', ()=>{
+            myModule.iniciarJuego();
+        });
+    </script>
     <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script> -->
 </body>
 </html>
